@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling Input Element</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <form action="">
+        <div>
+            <label for="name">Your Name:</label>
+            <input class="form-control" id="name" type="text" name="name" placeholder="Enter Your Name">
+        </div>
+        <div>
+            <label for="name">Your Email:</label>
+            <input class="form-control" id="email" type="email" name="email" placeholder="Enter Your Email">
+        </div>
+        <div>
+            <label for="movies">What do you love?</label>
+            <select class="form-control" name="choice" id="gender">
+                <option value="movies">Movies</option>
+                <option value="series">Series</option>
+                <option value="others">others</option>
+            </select>
+        </div>
+        <div>
+            <label class="color" for="color">Choose a color</label>
+            <input  type="color" id="color" name="color">
+        </div>
+        <div>
+            <label for="range">Rate the movie inception out of 10</label>
+            <input class="form-control" type="range" name="range" id="range" max="10" min="1">
+        </div>
+        <div>
+            <label for="">Book genere of your love?</label>
+            <div>
+                <input type="radio" id="fiction" value="fiction" name="book" checked >
+                <label for="fiction">Fiction</label>
+            </div>
+            <div>
+                <input type="radio" id="non-fiction" value="non-fiction" name="book" checked >
+                <label for="non-fiction">Non-Fiction</label>
+            </div>
+            <div>
+                <input type="radio" id="adventure" value="adventure" name="book" checked >
+                <label for="adventure">Adventure</label>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I Agre to Terms</label>
+        </div>
+        <div>
+            <button  class=" form-control" type="submit">Submit</button>
+        </div>
+    </form>
+   </div>
+   <div class="modal-overlay">
+    <div class="container relative">
+        <div class="btn-container">
+            <button class="btn-close modal-close">❌</button>
+        </div>
+        <div class="modal-info">
+            <!-- <h1>Hello Oggy</h1>
+            <p>Email: google@google.com </p>
+            <p>Email: google@google.com </p>
+            <p>Email: google@google.com </p>
+            <p>Email: google@google.com </p>
+            <p>Email: google@google.com </p>
+            <p>Email: google@google.com </p>
+            <p>👉 You agree to Terms and Condition</p> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
